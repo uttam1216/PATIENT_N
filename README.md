@@ -1,4 +1,4 @@
-# PATIENT-N
+# PATIENT+N
 PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion for New Patients
 
 <b>Disclaimer: </b> This software is only to support reproducibility in research. It is not intended for any type of commercial use or placement on the market. If you use the source code or any part of our research in any publication, please cite our research - https://doi.org/10.1007/978-3-032-37664-0_27
