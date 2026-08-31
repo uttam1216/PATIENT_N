@@ -1,10 +1,12 @@
 # PATIENT+N
 PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion for New Patients
 
-The code in this repository is an implementation of our approach published in "https://doi.org/10.1007/978-3-032-37664-0_27". If you use the source code, please cite our research.
+The code in this repository is an implementation of our published approach: <br>
+Uttam Kumar, Michael Wenzel, and Elena Demidova. “PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion in New Patients”. In: Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) 2026. LNAI. Springer, 2026. DOI: https://doi.org/10.1007/978-3-032-37664-0_27. <br>
+If you use the source code, please cite our research. <br>
 
 <b>Notes: </b> <br>
-1) This repository does not contain any data. To access the TUH Seizure (TUSZ) data used in this research, please directly contact the dataset author: https://isip.piconepress.com/projects/nedc/html/tuh_eeg/   <br>
+1) This repository does not contain any data. We used TUH Seizure (TUSZ) dataset v2.0.0 for our research. To access this data, please directly contact the TUH Seizure (TUSZ) dataset author whose reference is: "Shah, V., et al.: The temple university hospital seizure detection corpus. Front. Neuroinform. 12, 83 (2018)"  <br>
 In patient_n_dummy_data.csv we only give an example dummy data format that model needs to run with.  <br>
 2) It is recommended to run the python commands sequentially in a tmux session, as some feature extraction may take hours.<br>
 
@@ -158,7 +160,7 @@ A jupyternotebook of this final end-to-end model is also shared inside code_file
 
 <b>Affiliations: </b> The source code is being published in affiliation with the University of Bonn, Germany (https://www.uni-bonn.de/de). 
 
-<b>Acknowledgements: </b> This work was partially funded by the Ministry of Culture and Science of the State of North Rhine-Westphalia, Germany (“iBehave”), the German Federal Ministry of Research, Technology and Space (BMFTR) (“SecureNeuroAI”, 16KIS2345K) and Lamarr Institute for Machine Learning and Artificial Intelligence (https://lamarr-institute.org/).
+<b>Acknowledgements: </b> This work was partially funded by the Ministry of Culture and Science of the State of North Rhine-Westphalia, Germany (“iBehave”), the German Federal Ministry of Research, Technology and Space (BMFTR) (“SecureNeuroAI”, 16KIS2345K) and the Lamarr Institute for Machine Learning and Artificial Intelligence (https://lamarr-institute.org/).
 
 
 
