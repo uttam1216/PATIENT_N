@@ -1,12 +1,12 @@
 # PATIENT+N
 PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion for New Patients
 
-<b>Disclaimer: </b> This software is only to support reproducibility in research. It is not intended for any type of commercial use or placement on the market. If you use the source code or any part of our research in any publication, please cite our research - https://doi.org/10.1007/978-3-032-37664-0_27
+The code in this repository is an implementation of our approach published in "https://doi.org/10.1007/978-3-032-37664-0_27". If you use the source code, please cite our research.
 
 <b>Notes: </b> <br>
-1) To access the publicly available TUH Seizure (TUSZ) data used in this research, a Non-Disclosure Agreement (NDA) needs to be signed with the dataset author: https://isip.piconepress.com/projects/nedc/html/tuh_eeg/   <br>
+1) This repository does not contain any data. To access the TUH Seizure (TUSZ) data used in this research, please directly contact the dataset author: https://isip.piconepress.com/projects/nedc/html/tuh_eeg/   <br>
 In patient_n_dummy_data.csv we only give an example dummy data format that model needs to run with.  <br>
-2) Given one has the data access, by following the below instructions, the codes provided can be run to reproduce results depicted in the submitted paper. It is recommended to run the python commands sequentially in a tmux session, as some feature extraction may take hours.<br>
+2) It is recommended to run the python commands sequentially in a tmux session, as some feature extraction may take hours.<br>
 
 <b>Overview: </b> The project follows a multi-stage pipeline consisting of feature extraction, patient-specific modeling, clustering of seizure mechanisms, and multimodal seizure detection. Intermediate artifacts such as embeddings, clustering outputs, and trained models are stored in dedicated directories under src to ensure reproducibility and clear experiment tracking. The final model integrates tabular EEG features and scalogram representations through a cluster alignemnt mechanism, enabling patient-adaptive seizure onset detection. <br>
 
@@ -154,10 +154,11 @@ where scalograms_path = src+'scalograms'
 <b> <i> python3 model.py src </i> </b> <br>
 A jupyternotebook of this final end-to-end model is also shared inside code_files
 
-<b>Affiliations: </b> The source code is being published in affiliation with University of Bonn (https://www.uni-bonn.de/de) and the Lamarr Institute (https://lamarr-institute.org/). 
+<b>Disclaimer: </b> This software is published only to support reproducibility in research. It is not intended for any type of commercial use or placement on the market.
 
-<b>Acknowledgements: </b> This work was partially funded by the Ministry of Culture and Science of the State of North Rhine-Westphalia, Germany (“iBehave”) and the German Federal Ministry of Research, Technology and Space (BMFTR) (“SecureNeuroAI”, 16KIS2345K). 
+<b>Affiliations: </b> The source code is being published in affiliation with the University of Bonn, Germany (https://www.uni-bonn.de/de). 
 
+<b>Acknowledgements: </b> This work was partially funded by the Ministry of Culture and Science of the State of North Rhine-Westphalia, Germany (“iBehave”), the German Federal Ministry of Research, Technology and Space (BMFTR) (“SecureNeuroAI”, 16KIS2345K) and Lamarr Institute for Machine Learning and Artificial Intelligence (https://lamarr-institute.org/).
 
 
 
