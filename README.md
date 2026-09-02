@@ -6,14 +6,13 @@ Uttam Kumar, Michael Wenzel, and Elena Demidova. “PATIENT+N: Profiling feATure
 If you use the source code, please cite our research. <br>
 
 <b>Notes: </b> <br>
-1) This repository does not contain any data. We used TUH Seizure (TUSZ) dataset v2.0.0 for our research. To access this data, please directly contact the TUH Seizure (TUSZ) dataset author whose reference is: "Shah, V., et al.: The temple university hospital seizure detection corpus. Front. Neuroinform. 12, 83 (2018)"  <br>
-In patient_n_dummy_data.csv we only give an example dummy data format that model needs to run with.  <br>
+1) This repository does not contain any data. We used TUH Seizure (TUSZ) dataset v2.0.0 for our research. To access this data, please directly contact the TUH Seizure (TUSZ) dataset author: "Shah, V., et al.: The temple university hospital seizure detection corpus. Front. Neuroinform. 12, 83 (2018)"  <br>
+In patient_n_dummy_data.csv we give an example dummy data format that model needs to run with.  <br>
 2) It is recommended to run the python commands sequentially in a tmux session, as some feature extraction may take hours.<br>
 
-<b>Overview: </b> The project follows a multi-stage pipeline consisting of feature extraction, patient-specific modeling, clustering of seizure mechanisms, and multimodal seizure detection. Intermediate artifacts such as embeddings, clustering outputs, and trained models are stored in dedicated directories under src to ensure reproducibility and clear experiment tracking. The final model integrates tabular EEG features and scalogram representations through a cluster alignemnt mechanism, enabling patient-adaptive seizure onset detection. <br>
+<b>Introduction: </b> The provided software detects focal epileptic seizure onsets in new patients for whom no annotation of seizures is available in their EEG.
 
-<b> Focal Seizure Onset: </b>
-In focal seizure it can happen that one of the annotated bipolar channels e.g. 'FP2-F8' starts a seizure at start_time 32 sec, followed by other bipolar channels e.g. F8-T4 starting later e.g. 41st second. However, to still detect seizures early, we set a hard limit of <b>20 seconds</b> after start_time of the first annotated seizure channel for a given session as the seizure-onset time period. <b> Our EEG segment windows (8 seconds long), move only within this 20 second zone </b> and NOT over the entire annotated seizure time period. The EEG segment is considered valid and saved for seizure-onset class only if it contains at least one channel whose annotated seizure start time falls within this EEG segment.
+<b>Implementation Overview: </b> The project follows a multi-stage pipeline consisting of feature extraction, patient-specific modeling, clustering of seizure mechanisms, and multimodal seizure detection. Intermediate artifacts such as embeddings, clustering outputs, and trained models are stored in dedicated directories under src to ensure reproducibility and clear experiment tracking. The final model integrates tabular EEG features and scalogram representations through a cluster alignemnt mechanism, enabling patient-adaptive seizure onset detection. <br>
 
 <b>Project Directory Structure: </b> When the listed programs are run sequentially by just providing a source folder src as argument, all required folders will get created with meaningful names in a structure as shared below. All intermediate data, trained models, embeddings, clustering outputs, and diagnostic results are stored under this root directory src. The project follows a 5-fold cross-validation setup, where each fold contains patient-wise train, validation, and test splits. <br>
 
