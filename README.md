@@ -2,7 +2,7 @@
 PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion for New Patients
 
 The code in this repository is an implementation of our published approach: <br>
-Uttam Kumar, Michael Wenzel, and Elena Demidova. “PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion in New Patients”. In: Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) 2026. LNAI. Springer, 2026. DOI: https://doi.org/10.1007/978-3-032-37664-0_27. <br>
+Uttam Kumar, Michael Wenzel, and Elena Demidova. “PATIENT+N: Profiling feATure Importance for focal Epileptic seizure oNset detecTion in New Patients”. In: Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) 2026. LNAI. Springer, 2026. DOI: https://doi.org/10.1007/978-3-032-37664-0_27. In Press. <br>
 If you use the source code, please cite our research. <br>
 
 <b>Notes: </b> <br>
